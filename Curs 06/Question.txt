@@ -1,0 +1,15 @@
+QUESTION: What is StringBuffer and how is different from StringBuilder?
+
+ANSWER:
+StringBuffer and StringBuilder are both classes in Java used to create and manipulate mutable sequences of characters. However, they have some key differences:
+
+Mutability:
+StringBuffer: StringBuffer is mutable, meaning that the contents of a StringBuffer object can be modified after it is created.
+StringBuilder: StringBuilder is also mutable like StringBuffer, meaning you can modify the contents of a StringBuilder object after creation.
+Thread-safety:
+StringBuffer: StringBuffer is synchronized, which means it is thread-safe. Multiple threads can access and modify a StringBuffer object concurrently without causing any issues related to data consistency.
+StringBuilder: StringBuilder is not synchronized, so it is not thread-safe. If multiple threads access and modify a StringBuilder object concurrently, it may lead to data corruption or inconsistent results. However, because of this lack of synchronization, StringBuilder tends to be faster in single-threaded environments.
+Performance:
+StringBuffer: Because StringBuffer is synchronized, it incurs the overhead of synchronization, making it slightly slower than StringBuilder.
+StringBuilder: StringBuilder is not synchronized, so it does not incur the overhead of synchronization. Therefore, it is typically faster than StringBuffer.
+In summary, if you require thread safety, you should use StringBuffer. Otherwise, if you do not need thread safety and want better performance, StringBuilder is the preferred choice.

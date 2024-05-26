@@ -1,0 +1,59 @@
+## 1.How do I calculate space and time complexity? ##
+
+Calculating space and time complexity involves analyzing how the resource requirements (memory and time) of an algorithm
+ or a program change with the size of the input. Here's a brief overview of how to calculate each:
+
+1.Count Basic Operations: Identify the basic operations performed in the algorithm. Common operations include arithmetic operations, comparisons, assignments, and iterations.
+2.Determine Dominant Operations: Find the operation(s) that contribute most to the overall running time. For iterative algorithms, this often involves analyzing loops.
+3.Ignore Constant Factors and Lower Order Terms: In Big O notation, we focus on the behavior of the algorithm as the input size grows large. Constant factors and lower-order terms are disregarded.
+4.Express Time Complexity: Finally, express the time complexity using Big O notation. Common time complexities include O(1), O(log n), O(n), O(n log n), O(n^2), O(2^n), etc.
+
+Space Complexity:
+Space complexity refers to the amount of memory required by an algorithm or a program to execute as a function of the size of the input. Here's how to analyze space complexity:
+
+1.Identify Memory Usage: Determine the memory required by the algorithm or program. This includes variables, data structures, recursion stacks, etc.
+2.Quantify Memory Usage: Quantify how the memory requirements change with the size of the input. This may involve analyzing the space used by arrays, linked lists, trees, etc.
+3.Express Space Complexity: Express the space complexity using Big O notation. Similar to time complexity, we focus on the behavior of the algorithm as the input size grows large.
+
+Example:
+Let's consider the time and space complexity of finding the maximum element in an array of size n:
+
+int findMax(int[] arr) {
+    int max = Integer.MIN_VALUE;  // O(1)
+    for (int i = 0; i < arr.length; i++) {  // O(n)
+        if (arr[i] > max) {  // O(1)
+            max = arr[i];  // O(1)
+        }
+    }
+    return max;  // O(1)
+}
+
+Time Complexity: O(n) - This algorithm iterates through the entire array once.
+Space Complexity: O(1) - The algorithm uses a constant amount of extra space regardless of the input size.
+By analyzing the code in this manner, you can determine both its time and space complexity.
+
+*********************************************************************************************************************************************************************************************************************
+
+
+## 2.How do I know when my code is hard to understand by others? ##
+
+Understanding code readability is subjective and can vary from person to person. However, here are some common indicators that your code might be hard to understand by others:
+
+1.Lack of Comments: Code without sufficient comments or documentation can be challenging to understand, especially for someone unfamiliar with the codebase or the problem domain.
+2.Poor Naming Conventions: Descriptive and meaningful variable, function, and class names can significantly enhance code readability. If your code uses vague or cryptic names, it may be hard to understand.
+3.Complex Logic: Excessive nesting, deeply nested conditional statements, or convoluted control flow can make code difficult to follow. Break down complex logic into smaller, more manageable pieces.
+4.Long Functions or Methods: Functions or methods that are too long often indicate that they are doing too much. Consider breaking them down into smaller, more focused units to improve readability and maintainability.
+5.Inconsistent Formatting: Inconsistent indentation, spacing, or coding style throughout the codebase can make it challenging to read. Adhering to a consistent coding style can improve readability and maintainability.
+6.Excessive Use of Abbreviations: While abbreviations can sometimes save space, excessive use of abbreviations or acronyms without proper explanation can make the code harder to understand.
+7.Lack of Modularity: Code that lacks modular design principles can be difficult to understand and maintain. Encapsulate related functionality into separate modules, classes, or functions with clear interfaces.
+8.Overly Clever Code: Writing overly clever or "tricky" code may be difficult for others to understand, even if it's concise. Favor clarity and readability over cleverness.
+9.Complex Data Structures or Algorithms: If your code uses complex data structures or algorithms, provide comments or documentation to explain their purpose and usage.
+10.Ignoring Standard Practices: Ignoring established best practices or coding conventions in the programming language or framework can make the code harder to understand for others familiar with those conventions.
+
+To improve code readability, it's essential to prioritize clarity, simplicity, and maintainability. Regular code reviews, seeking feedback from peers, and considering the perspective of someone unfamiliar with
+ the codebase can also help identify areas for improvement.
+
+
+***************************************************************************************************************************************************************************************************
+
+

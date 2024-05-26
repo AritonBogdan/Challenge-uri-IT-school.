@@ -1,0 +1,74 @@
+Q1.What is a Stack and a Queue? Ho do they work and when are used?
+
+A stack and a queue are both fundamental data structures in computer science used to manage collections of elements.
+
+Stack:
+A stack is a Last-In-First-Out (LIFO) data structure, meaning that the last element added to the stack is the first one to be removed.
+Think of a stack like a stack of plates in a cafeteria: you add plates to the top of the stack, and you remove plates from the top as well.
+The operations typically associated with a stack are:
+Push: Adds an element to the top of the stack.
+Pop: Removes and returns the top element from the stack.
+Peek (or Top): Returns the top element of the stack without removing it.
+Stacks are used in various algorithms and applications such as function calls and expression evaluation (like in compilers and interpreters), undo mechanisms in software, and backtracking algorithms.
+
+Queue:
+A queue is a First-In-First-Out (FIFO) data structure, meaning that the first element added to the queue is the first one to be removed.
+Think of a queue like a line of people waiting for a service: the person who joined the line first gets served first.
+The operations typically associated with a queue are:
+Enqueue: Adds an element to the end of the queue.
+Dequeue: Removes and returns the front element from the queue.
+Peek (or Front): Returns the front element of the queue without removing it.
+Queues are used in scenarios where the order of elements matters, such as task scheduling, printer job management, and breadth-first search algorithms.
+Both stacks and queues have their specific use cases based on their behavior. Stacks are ideal for scenarios where you need to maintain a last-in-first-out order, while queues are suitable for maintaining a
+ first-in-first-out order. Understanding these data structures and their operations is crucial for designing efficient algorithms and software systems.
+
+Q2.What is the difference between for and for enhanced? When I should use one or another?
+
+
+In Java, the "for" loop and the "enhanced for" loop (also known as the "for-each" loop) are both used for iteration, but they have different purposes and syntax.
+
+For Loop:
+
+The traditional "for" loop in Java is used for iterating over a range of values or elements based on a given condition.
+Syntax:
+java
+Copy code
+for (initialization; condition; update) {
+    // code block to be executed
+}
+Example:
+java
+Copy code
+for (int i = 0; i < 5; i++) {
+    System.out.println(i);
+}
+In a "for" loop, you explicitly define the loop variable, the loop condition, and the increment or decrement operation.
+Enhanced For Loop (For-each Loop):
+
+The enhanced for loop is specifically designed for iterating over elements in an array or collections (like ArrayList, HashSet, etc.).
+Syntax:
+java
+Copy code
+for (element_type element : collection) {
+    // code block to be executed
+}
+Example:
+java
+Copy code
+int[] numbers = {1, 2, 3, 4, 5};
+for (int num : numbers) {
+    System.out.println(num);
+}
+In an enhanced for loop, you don't need to explicitly define a loop variable or manage the iteration manually. The loop automatically iterates over each element in the collection.
+When to Use:
+
+Use a traditional "for" loop when you need to iterate over a range of values or perform complex looping logic.
+Use an enhanced for loop when you want to iterate over elements in an array or collection without needing to manage indices explicitly. It provides a simpler and more concise syntax, especially for iterating over collections.
+In summary, choose the appropriate loop based on your specific requirement: use "for" loop for general-purpose iteration with explicit control, and use "enhanced for" loop for iterating over elements in arrays or collections.
+
+
+
+
+
+
+

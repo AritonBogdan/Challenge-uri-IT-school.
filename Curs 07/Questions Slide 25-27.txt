@@ -1,0 +1,38 @@
+Object Class in Java:
+How does the default equals() method in the Object class work?
+What other methods are part of the Object class and why are they significant?
+Why is the Object class considered the root of all Java classes?
+
+Java Date and Time API:
+How did Java handle dates and times before LocalDate and LocalDateTime were introduced?
+How does the Java Date and Time API handle leap years?
+Explore the ZoneId and ZonedDateTime classes. How do they help in handling date-time operations across time zones?
+
+Java's java.sql.Date vs java.util.Date:
+Why did Java introduce two Date classes in different packages?
+How can you convert between java.util.Date and java.sql.Date?
+What are the main differences between Timestamp, java.util.Date, and java.sql.Date?
+
+
+Object-Oriented Programming:
+What are the four main principles of OOP, and how do they benefit software design?
+Why is the concept of "composition over inheritance" recommended in OOP?
+What are design patterns? Explore a few common design patterns in Java.
+
+Java Utilities – Random & Scanner:
+How does Java's Random class generate random numbers? Is it truly random?
+What other methods does the Scanner class provide besides reading input values?
+How can you generate random numbers in a specific range using the Random class?
+
+Problem Solving and Algorithms:
+What is the difference between an algorithm and a heuristic?
+How can "Big O Notation" help in analyzing the efficiency of your algorithms?
+Explore some sorting algorithms. How does their efficiency differ?
+
+Advanced Topics (for the keen learners):
+What is the Java Virtual Machine (JVM) and how does it work?
+How does Java handle garbage collection?
+What is the difference between "checked" and "unchecked" exceptions in Java?
+
+
+
